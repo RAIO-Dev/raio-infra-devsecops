@@ -13,5 +13,5 @@ jobs:
         uses: dependency-check/Dependency-Check_Action@main
         with:
           project: "repo-sast"
-          format: "CLI"
+          format: "HTML"
           failOnCVSS: 6.5
