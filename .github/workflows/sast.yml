@@ -8,3 +8,5 @@ jobs:
     uses: RAIO-Dev/raio-infra-devsecops/.github/workflows/sast-gitleaks.yml@main
   sast-semgrep:
     uses: RAIO-Dev/raio-infra-devsecops/.github/workflows/sast-semgrep.yml@main
+  sast-dependecycheck:
+    uses: RAIO-Dev/raio-infra-devsecops/.github/workflows/sast-dependecycheck.yml@main
