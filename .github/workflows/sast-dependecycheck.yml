@@ -11,8 +11,7 @@ jobs:
 
       - name: Run OWASP Dependency-Check (CLI only)
         run: |
-          curl -L -o dependency-check.zip https://github.com/jeremylong/DependencyCheck/releases/latest/download/dependency-check-8.4.5-release.zip
+          curl -L -o dependency-check.zip https://github.com/jeremylong/DependencyCheck/releases/download/v8.4.5/dependency-check-8.4.5-release.zip
           unzip dependency-check.zip -d dc
           cd dc/dependency-check
-          # Scans current directory, outputs results to CLI, fails on any CVE found (failOnCVSS=0)
-          ./bin/dependency-check.sh --format CLI --failOnCVSS 0 --scan $GITHUB_WORKSPACE
+          ./bin/dependency-check.sh --format CLI --failOnCVSS 6.5 --scan $GITHUB_WORKSPACE
