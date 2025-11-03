@@ -10,10 +10,10 @@ This repository contains **centrally managed, reusable GitHub Actions workflows*
 
 ## How to Use in Other Repositories
 
-To apply these scans in any repo of your organization, create a workflow file (for example: `.github/workflows/sast-caller.yml`) containing:
+To apply these scans in any repo of your organization, create a workflow file (for example: `.github/workflows/devsecops.yml`) containing:
 
 ```
-name: sast
+name: devsecops
 
 on:
   push:
