@@ -10,4 +10,4 @@ jobs:
       - uses: actions/checkout@v4
       - name: Run Semgrep OSS
         run: |
-          docker run --rm -v "${PWD}:/src" semgrep/semgrep:latest-nonroot semgrep scan --config auto
+          docker run --rm -v "${PWD}:/src" semgrep/semgrep:latest-nonroot semgrep scan --config auto --fail-on findings
