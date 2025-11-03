@@ -1,0 +1,10 @@
+name: sast
+
+on:
+  workflow_call:
+
+jobs:
+  sast-gitleaks:
+    uses: RAIO-Dev/raio-infra-devsecops/.github/workflows/sast-gitleaks.yml@main
+  sast-semgrep:
+    uses: RAIO-Dev/raio-infra-devsecops/.github/workflows/sast-semgrep.yml@main
